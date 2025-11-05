@@ -1,0 +1,169 @@
+/* ======================================
+   INTERFAZ LEGAL - ESTILO CALL OF DUTY
+   ====================================== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background-color: #000;
+  width: 260px;
+  padding: 20px;
+  border-right: 2px solid #ff6600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h2 {
+  color: #ff6600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid transparent;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #000;
+  background-color: #ff6600;
+  border-color: #ff6600;
+  box-shadow: 0 0 12px #ff6600;
+}
+
+/* CONTENIDO PRINCIPAL */
+.content {
+  flex: 1;
+  padding: 40px;
+  background: linear-gradient(145deg, #0d0d0d 70%, #1a1a1a);
+}
+
+.content header {
+  border-bottom: 2px solid #ff6600;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.content h1 {
+  color: #ff6600;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.content p {
+  color: #ccc;
+  font-size: 16px;
+}
+
+/* TARJETAS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #111;
+  border: 1px solid #ff6600;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 0 8px rgba(255, 102, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+}
+
+.card h3 {
+  color: #ff6600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  color: #ff6600;
+  border: 1px solid #ff6600;
+  border-radius: 6px;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff6600;
+  color: #000;
+  box-shadow: 0 0 10px #ff6600;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: #999;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #ff6600;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #ff6600;
+  }
+}
+
+.volver-container {
+  margin-top: 20px;
+  text-align: center;
+}
